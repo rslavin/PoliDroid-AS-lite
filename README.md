@@ -11,7 +11,5 @@ Though PoliDroid-AS is designed for Android Studio, it can be installed on any I
 To install, simply navitate to File > Settings > Plugins and click the "Install plugin from disk..." button at the bottom and select the PoliDroid-AS jar file. Once installed, PoliDroid-AS can be configured from the Editor > Inspections menu in the IDE's settings.
 
 ### Developer Notes
-_After_ importing as a Maven project and downloading dependencies (and probably restarting the IDE), you'll need to change `type="JAVA_MODULE"` to `type="PLUGIN_MODULE"` in your .iml file. Then you'll be able to find it in the "Use classpath of module" dropdown in your run configuration. 
-Also, make sure META-INF is set: Project settings > Modules > [plugin] > Plugin Deployment > Path to META-INF/plugin.xml
+_After_ importing as a Gradle project, you'll need to add a run/debug Configuration. Click add Configuration in the toolbar menu and add a Gradle configuration. For the project field choose PoliDroid-AS-lite and in the task field type ":runIde". 
 
-Maven projects aren't currently supported by the IntelliJ SDK so there may be other minor issues.

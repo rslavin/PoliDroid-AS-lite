@@ -30,10 +30,3 @@ intellij {
     plugins 'coverage' //Bundled plugin dependencies
     pluginName 'PoliDroid-AS(w_gradle)'
 }
-
-
-patchPluginXml {
-    changeNotes """
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>"""
-}
